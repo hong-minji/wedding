@@ -1,0 +1,20 @@
+@import "tailwindcss";
+
+:root {
+  --bg-top: #313131;
+  --bg-bottom: #000000;
+  --text-primary: #F5F1EA;
+  --text-muted: rgba(245, 241, 234, 0.60);
+  --text-subtle: rgba(245, 241, 234, 0.40);
+  --divider: rgba(255, 255, 255, 0.12);
+  --card-bg: rgba(255, 255, 255, 0.05);
+  --card-border: rgba(255, 255, 255, 0.10);
+  --accent-kakao: #FEE500;
+}
+
+html, body {
+  background: linear-gradient(to bottom, var(--bg-top) 0%, var(--bg-bottom) 100%);
+  background-attachment: fixed;
+  color: var(--text-primary);
+  min-height: 100dvh;
+}
