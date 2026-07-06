@@ -2,6 +2,8 @@ import { Hero } from '@/components/Hero'
 import { Parents } from '@/components/Parents'
 import { Calendar } from '@/components/Calendar'
 import { Gallery } from '@/components/Gallery'
+import { Location } from '@/components/Location'
+import { Account } from '@/components/Account'
 
 export default function Home() {
   return (
@@ -10,6 +12,8 @@ export default function Home() {
       <Parents />
       <Calendar />
       <Gallery />
+      <Location />
+      <Account />
     </main>
   )
 }
