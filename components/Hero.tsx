@@ -1,11 +1,12 @@
 import Image from 'next/image'
 import { wedding } from '@/lib/weddingInfo'
+import { asset } from '@/lib/assetPath'
 
 export function Hero() {
   return (
     <section className="relative w-full h-[100dvh] overflow-hidden">
       <Image
-        src="/photos/main.png"
+        src={asset('/photos/main.png')}
         alt="홍민지 조해창"
         fill
         priority

@@ -2,15 +2,16 @@
 import Image from 'next/image'
 import { useState } from 'react'
 import { Lightbox } from './Lightbox'
+import { asset } from '@/lib/assetPath'
 
 const PHOTOS = [
-  '/photos/photo-01.png',
-  '/photos/photo-02.png',
-  '/photos/photo-03.png',
-  '/photos/photo-04.png',
-  '/photos/photo-05.png',
-  '/photos/photo-06.png',
-  '/photos/photo-07.png',
+  asset('/photos/photo-01.png'),
+  asset('/photos/photo-02.png'),
+  asset('/photos/photo-03.png'),
+  asset('/photos/photo-04.png'),
+  asset('/photos/photo-05.png'),
+  asset('/photos/photo-06.png'),
+  asset('/photos/photo-07.png'),
 ]
 
 export function Gallery() {
