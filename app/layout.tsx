@@ -12,6 +12,7 @@ export const metadata: Metadata = {
     description: '2026. 10. 3. SAT 5PM · 고려대학교 교우회관',
     type: 'website',
     locale: 'ko_KR',
+    images: [{ url: 'photos/meta-image.png', width: 1200, height: 630 }],
   },
 }
 
