@@ -1,28 +1,15 @@
-import Image from 'next/image'
 import { wedding } from '@/lib/weddingInfo'
-import { kakaoMapUrl, naverMapUrl, tmapUrl } from '@/lib/mapLinks'
+import { KakaoMap } from './KakaoMap'
 
 export function Location() {
-  const place = {
-    name: wedding.venue.name,
-    lat: wedding.venue.lat,
-    lng: wedding.venue.lng,
-  }
-
   return (
     <section className="py-16 px-4">
       <p className="mb-6 text-center uppercase text-[13px] tracking-[0.3em] text-[color:var(--text-muted)]" style={{ fontFamily: 'var(--font-lora)' }}>
         Location
       </p>
 
-      <div className="relative w-full aspect-[16/10] overflow-hidden rounded-md border border-[color:var(--card-border)] bg-[color:var(--card-bg)]">
-        <Image
-          src="/photos/static-map.png"
-          alt="예식장 위치 지도"
-          fill
-          sizes="(max-width: 430px) 100vw, 430px"
-          className="object-cover"
-        />
+      <div className="relative w-full aspect-[16/10] overflow-hidden rounded-md border border-[color:var(--card-border)] bg-[color:var(--card-bg)] grayscale">
+        <KakaoMap />
       </div>
 
       <div className="mt-6 text-center">
@@ -32,9 +19,9 @@ export function Location() {
         </p>
       </div>
 
-      <div className="mt-6 grid grid-cols-3 gap-2">
+      <div className="mt-6 grid grid-cols-2 gap-2">
         <a
-          href={kakaoMapUrl(place)}
+          href={wedding.venue.kakaoMapLink}
           target="_blank"
           rel="noreferrer"
           className="rounded-md border border-white/20 py-2 text-center text-[12px] text-[color:var(--text-primary)] hover:bg-white/5 transition"
@@ -42,16 +29,12 @@ export function Location() {
           카카오맵
         </a>
         <a
-          href={naverMapUrl(place)}
+          href={wedding.venue.naverMapLink}
+          target="_blank"
+          rel="noreferrer"
           className="rounded-md border border-white/20 py-2 text-center text-[12px] text-[color:var(--text-primary)] hover:bg-white/5 transition"
         >
           네이버지도
-        </a>
-        <a
-          href={tmapUrl(place)}
-          className="rounded-md border border-white/20 py-2 text-center text-[12px] text-[color:var(--text-primary)] hover:bg-white/5 transition"
-        >
-          T맵
         </a>
       </div>
 

@@ -8,14 +8,16 @@ import { Share } from '@/components/Share'
 
 export default function Home() {
   return (
-    <main className="mx-auto max-w-[430px] min-h-dvh">
+    <>
       <Hero />
-      <Parents />
-      <Calendar />
-      <Gallery />
-      <Location />
-      <Account />
-      <Share />
-    </main>
+      <main className="mx-auto max-w-[430px] min-h-dvh">
+        <Parents />
+        <Calendar />
+        <Gallery />
+        <Location />
+        <Account />
+        <Share />
+      </main>
+    </>
   )
 }
