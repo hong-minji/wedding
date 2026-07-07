@@ -1,7 +1,18 @@
+'use client'
+import { useState } from 'react'
 import { wedding } from '@/lib/weddingInfo'
+import { copyText } from '@/lib/copy'
 import { KakaoMap } from './KakaoMap'
+import { Toast } from './Toast'
 
 export function Location() {
+  const [toast, setToast] = useState<string | null>(null)
+
+  const onCopyAddress = async () => {
+    const ok = await copyText(wedding.venue.address)
+    setToast(ok ? '주소가 복사되었어요' : '복사에 실패했어요')
+  }
+
   return (
     <section className="py-16 px-4">
       <p className="mb-6 text-center uppercase text-[13px] tracking-[0.3em] text-[color:var(--text-muted)]" style={{ fontFamily: 'var(--font-lora)' }}>
@@ -15,8 +26,15 @@ export function Location() {
       <div className="mt-6 text-center">
         <p className="text-[15px] text-[color:var(--text-primary)]">{wedding.venue.name}</p>
         <p className="mt-1 text-[13px] text-[color:var(--text-muted)]">
-          {wedding.venue.address} {wedding.venue.addressDetail}
+          {wedding.venue.address}
         </p>
+        <button
+          type="button"
+          onClick={onCopyAddress}
+          className="mt-3 inline-flex items-center gap-1.5 rounded-full border border-white/20 px-3 py-1 text-[11px] text-[color:var(--text-muted)] hover:bg-white/5 transition"
+        >
+          주소 복사
+        </button>
       </div>
 
       <div className="mt-6 grid grid-cols-2 gap-2">
@@ -48,6 +66,8 @@ export function Location() {
           <p className="mt-1">{wedding.venue.car}</p>
         </div>
       </div>
+
+      {toast && <Toast message={toast} onDone={() => setToast(null)} />}
     </section>
   )
 }
