@@ -4,7 +4,7 @@ import { asset } from '@/lib/assetPath'
 
 export function Hero() {
   return (
-    <section className="relative w-full h-[100dvh] overflow-hidden">
+    <section className="relative w-full h-[100svh] overflow-hidden">
       <Image
         src={asset('/photos/main.png')}
         alt="홍민지 조해창"
