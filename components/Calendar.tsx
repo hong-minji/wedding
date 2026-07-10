@@ -18,10 +18,10 @@ export function Calendar() {
   const [dday, setDday] = useState<number | null>(null)
 
   useEffect(() => {
-    const target = new Date(wedding.date.iso).getTime()
-    const now = Date.now()
-    const diff = Math.ceil((target - now) / (1000 * 60 * 60 * 24))
-    setDday(diff)
+    const nowKst = new Date(Date.now() + 9 * 60 * 60 * 1000)
+    const todayUtc = Date.UTC(nowKst.getUTCFullYear(), nowKst.getUTCMonth(), nowKst.getUTCDate())
+    const targetUtc = Date.UTC(2026, 9, 3)
+    setDday(Math.round((targetUtc - todayUtc) / 86400000))
   }, [])
 
   const cells = buildMonthGrid(2026, 10)
