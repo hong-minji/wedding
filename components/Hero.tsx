@@ -1,10 +1,18 @@
+'use client'
+import { useEffect, useState } from 'react'
 import Image from 'next/image'
 import { wedding } from '@/lib/weddingInfo'
 import { asset } from '@/lib/assetPath'
 
 export function Hero() {
+  const [height, setHeight] = useState<string>('100svh')
+
+  useEffect(() => {
+    setHeight(`${window.innerHeight}px`)
+  }, [])
+
   return (
-    <section className="relative w-full h-[100svh] overflow-hidden">
+    <section className="relative w-full overflow-hidden" style={{ height }}>
       <Image
         src={asset('/photos/main.png')}
         alt="홍민지 조해창"
