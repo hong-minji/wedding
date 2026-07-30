@@ -9,6 +9,8 @@ const PHOTOS = [
   asset('/photos/photo-02.png'),
   asset('/photos/photo-03.png'),
   asset('/photos/photo-04.png'),
+  asset('/photos/photo-05.png'),
+  asset('/photos/photo-06.png'),
 ]
 
 export function Gallery() {
