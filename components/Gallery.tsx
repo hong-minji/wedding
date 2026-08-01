@@ -7,10 +7,10 @@ import { asset } from '@/lib/assetPath'
 const PHOTOS = [
   asset('/photos/photo-01.png'),
   asset('/photos/photo-02.png'),
-  asset('/photos/photo-03.png'),
-  asset('/photos/photo-04.png'),
   asset('/photos/photo-05.png'),
   asset('/photos/photo-06.png'),
+  asset('/photos/photo-03.png'),
+  asset('/photos/photo-04.png'),
 ]
 
 export function Gallery() {
