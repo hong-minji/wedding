@@ -3,13 +3,19 @@ export const wedding = {
     name: '조해창',
     father: '조수현',
     mother: '김보영',
-    account: { bank: '국민은행', number: '021902-04-127492', holder: '조해창' },
+    accounts: [
+      { role: '신랑', bank: '국민은행', number: '021902-04-127492', holder: '조해창' },
+      { role: '아버지', bank: '신한은행', number: '110-176-145414', holder: '조수현' },
+      { role: '어머니', bank: '농협', number: '461-12-175661', holder: '김보영' },
+    ],
   },
   bride: {
     name: '홍민지',
     father: '홍영권',
     mother: '김계열',
-    account: { bank: '국민은행', number: '032902-04-260074', holder: '홍민지' },
+    accounts: [
+      { role: '신부', bank: '국민은행', number: '032902-04-260074', holder: '홍민지' },
+    ],
   },
   date: {
     iso: '2026-10-03T17:00:00+09:00',
