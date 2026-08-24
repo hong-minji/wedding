@@ -31,7 +31,7 @@ export function Location() {
         <button
           type="button"
           onClick={onCopyAddress}
-          className="mt-3 inline-flex items-center gap-1.5 rounded-full border border-white/20 px-3 py-1 text-[11px] text-[color:var(--text-muted)] hover:bg-white/5 transition"
+          className="mt-3 inline-flex items-center gap-1.5 rounded-full border border-[color:var(--line)] px-3 py-1 text-[11px] text-[color:var(--text-muted)] hover:bg-[color:var(--hover)] transition"
         >
           주소 복사
         </button>
@@ -42,7 +42,7 @@ export function Location() {
           href={wedding.venue.kakaoMapLink}
           target="_blank"
           rel="noreferrer"
-          className="rounded-md border border-white/20 py-2 text-center text-[12px] text-[color:var(--text-primary)] hover:bg-white/5 transition"
+          className="rounded-md border border-[color:var(--line)] py-2 text-center text-[12px] text-[color:var(--text-primary)] hover:bg-[color:var(--hover)] transition"
         >
           카카오맵
         </a>
@@ -50,7 +50,7 @@ export function Location() {
           href={wedding.venue.naverMapLink}
           target="_blank"
           rel="noreferrer"
-          className="rounded-md border border-white/20 py-2 text-center text-[12px] text-[color:var(--text-primary)] hover:bg-white/5 transition"
+          className="rounded-md border border-[color:var(--line)] py-2 text-center text-[12px] text-[color:var(--text-primary)] hover:bg-[color:var(--hover)] transition"
         >
           네이버지도
         </a>

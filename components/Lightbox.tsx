@@ -47,7 +47,7 @@ export function Lightbox({ photos, startIndex, onClose }: Props) {
       onClick={onClose}
       onTouchStart={onTouchStart}
       onTouchEnd={onTouchEnd}
-      className="fixed inset-0 z-50 flex items-center justify-center bg-black/95"
+      className="fixed inset-0 z-50 flex items-center justify-center bg-[#EAF3FA]/95"
     >
       <div className="relative h-full w-full" onClick={e => e.stopPropagation()}>
         <Image
@@ -61,25 +61,25 @@ export function Lightbox({ photos, startIndex, onClose }: Props) {
         <button
           aria-label="닫기"
           onClick={onClose}
-          className="absolute right-4 top-4 rounded-full bg-white/10 px-3 py-1 text-white text-sm"
+          className="absolute right-4 top-4 rounded-full bg-[#1F3C55]/75 px-3 py-1 text-white text-sm"
         >
           ✕
         </button>
         <button
           aria-label="이전"
           onClick={prev}
-          className="absolute left-2 top-1/2 -translate-y-1/2 rounded-full bg-white/10 px-3 py-2 text-white"
+          className="absolute left-2 top-1/2 -translate-y-1/2 rounded-full bg-[#1F3C55]/75 px-3 py-2 text-white"
         >
           ‹
         </button>
         <button
           aria-label="다음"
           onClick={next}
-          className="absolute right-2 top-1/2 -translate-y-1/2 rounded-full bg-white/10 px-3 py-2 text-white"
+          className="absolute right-2 top-1/2 -translate-y-1/2 rounded-full bg-[#1F3C55]/75 px-3 py-2 text-white"
         >
           ›
         </button>
-        <p className="absolute bottom-6 left-0 right-0 text-center text-white/70 text-xs">
+        <p className="absolute bottom-6 left-0 right-0 text-center text-[color:var(--text-muted)] text-xs">
           {index + 1} / {photos.length}
         </p>
       </div>

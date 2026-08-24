@@ -39,7 +39,7 @@ export function Share() {
         <button
           type="button"
           onClick={onCopyLink}
-          className="w-full rounded-md border border-white/25 py-3 text-[13px] text-[color:var(--text-primary)] hover:bg-white/5"
+          className="w-full rounded-md border border-[color:var(--line-strong)] py-3 text-[13px] text-[color:var(--text-primary)] hover:bg-[color:var(--hover)]"
         >
           링크 복사
         </button>

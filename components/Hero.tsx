@@ -19,19 +19,20 @@ export function Hero() {
         fill
         priority
         sizes="(max-width: 430px) 100vw, 430px"
-        className="object-cover grayscale"
+        className="object-cover"
       />
 
       <div
         className="pointer-events-none absolute inset-x-0 top-0 h-1/4"
         style={{
-          background: 'linear-gradient(to top, rgba(31,31,31,0) 0%, rgba(31,31,31,0.7) 100%)',
+          background: 'linear-gradient(to top, rgba(255,255,255,0) 0%, rgba(255,255,255,0.30) 100%)',
         }}
       />
       <div
         className="pointer-events-none absolute inset-x-0 bottom-0 h-2/5"
         style={{
-          background: 'linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,0.85) 100%)',
+          background:
+            'linear-gradient(to bottom, rgba(234,243,250,0) 0%, rgba(234,243,250,0.50) 50%, var(--bg-top) 100%)',
         }}
       />
 

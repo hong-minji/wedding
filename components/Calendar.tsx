@@ -61,7 +61,7 @@ export function Calendar() {
                 <span
                   className={
                     isTarget
-                      ? 'flex h-8 w-8 items-center justify-center rounded-full bg-white/15 text-[color:var(--text-primary)] text-[13px]'
+                      ? 'flex h-8 w-8 items-center justify-center rounded-full bg-[color:var(--accent)] text-white text-[13px]'
                       : 'text-[13px] text-[color:var(--text-muted)]'
                   }
                 >
@@ -79,7 +79,7 @@ export function Calendar() {
         href={gcalUrl}
         target="_blank"
         rel="noreferrer"
-        className="mt-6 rounded-full border border-white/25 px-5 py-2 text-[12px] tracking-wide text-[color:var(--text-primary)] hover:bg-white/5 transition"
+        className="mt-6 rounded-full border border-[color:var(--line-strong)] px-5 py-2 text-[12px] tracking-wide text-[color:var(--text-primary)] hover:bg-[color:var(--hover)] transition"
       >
         구글 캘린더에 추가
       </a>

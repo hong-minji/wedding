@@ -24,7 +24,7 @@ export function Account() {
           <span className="text-[13px] text-[color:var(--text-primary)]">{LABEL[side]}</span>
           <span className="text-[11px] text-[color:var(--text-muted)]">열기</span>
         </summary>
-        <div className="border-t border-white/5 divide-y divide-white/5">
+        <div className="border-t border-[color:var(--divider)] divide-y divide-[color:var(--divider)]">
           {person.accounts.map((acc) => (
             <div key={acc.number} className="px-4 py-3 flex items-center justify-between">
               <div>
@@ -39,7 +39,7 @@ export function Account() {
               <button
                 type="button"
                 onClick={() => onCopy(acc.number)}
-                className="rounded-md border border-white/25 px-3 py-1 text-[12px] text-[color:var(--text-primary)] hover:bg-white/5 shrink-0"
+                className="rounded-md border border-[color:var(--line-strong)] px-3 py-1 text-[12px] text-[color:var(--text-primary)] hover:bg-[color:var(--hover)] shrink-0"
               >
                 복사
               </button>

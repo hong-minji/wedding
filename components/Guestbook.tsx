@@ -97,7 +97,7 @@ export function Guestbook() {
           onChange={(e) => setName(e.target.value)}
           placeholder="이름"
           maxLength={NAME_MAX}
-          className="w-full rounded-md border border-white/25 bg-transparent px-3 py-2 text-[14px] text-[color:var(--text-primary)] placeholder:text-[color:var(--text-muted)] focus:outline-none focus:border-white/50"
+          className="w-full rounded-md border border-[color:var(--line-strong)] bg-white/55 px-3 py-2 text-[14px] text-[color:var(--text-primary)] placeholder:text-[color:var(--text-muted)] focus:outline-none focus:border-[color:var(--accent)]"
         />
         <textarea
           value={message}
@@ -105,12 +105,12 @@ export function Guestbook() {
           placeholder="축하 메시지를 남겨주세요"
           maxLength={MESSAGE_MAX}
           rows={3}
-          className="w-full rounded-md border border-white/25 bg-transparent px-3 py-2 text-[14px] text-[color:var(--text-primary)] placeholder:text-[color:var(--text-muted)] focus:outline-none focus:border-white/50 resize-none"
+          className="w-full rounded-md border border-[color:var(--line-strong)] bg-white/55 px-3 py-2 text-[14px] text-[color:var(--text-primary)] placeholder:text-[color:var(--text-muted)] focus:outline-none focus:border-[color:var(--accent)] resize-none"
         />
         <button
           type="submit"
           disabled={submitting}
-          className="w-full rounded-md border border-white/25 py-3 text-[13px] text-[color:var(--text-primary)] hover:bg-white/5 disabled:opacity-50"
+          className="w-full rounded-md border border-[color:var(--line-strong)] py-3 text-[13px] text-[color:var(--text-primary)] hover:bg-[color:var(--hover)] disabled:opacity-50"
         >
           {submitting ? '등록 중…' : '메시지 남기기'}
         </button>
@@ -118,7 +118,7 @@ export function Guestbook() {
 
       <ul className="space-y-3">
         {entries.map((entry) => (
-          <li key={entry.id} className="rounded-md border border-white/15 px-4 py-3">
+          <li key={entry.id} className="rounded-md border border-[color:var(--line)] px-4 py-3">
             <div className="flex items-baseline justify-between mb-1">
               <span className="text-[13px] font-medium text-[color:var(--text-primary)]">{entry.name}</span>
               <span className="text-[11px] text-[color:var(--text-muted)]">{formatDate(entry.createdAt)}</span>

@@ -1,4 +1,4 @@
-import type { Metadata } from 'next'
+import type { Metadata, Viewport } from 'next'
 import Script from 'next/script'
 import { lora, pretendard } from '@/lib/fonts'
 import './globals.css'
@@ -14,6 +14,10 @@ export const metadata: Metadata = {
     locale: 'ko_KR',
     images: [{ url: 'photos/meta-image.png', width: 1200, height: 630 }],
   },
+}
+
+export const viewport: Viewport = {
+  themeColor: '#EAF3FA',
 }
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

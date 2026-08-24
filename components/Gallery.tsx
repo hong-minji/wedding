@@ -35,7 +35,7 @@ export function Gallery() {
               alt={`사진 ${i + 1}`}
               fill
               sizes="(max-width: 430px) 50vw, 200px"
-              className="object-cover grayscale hover:grayscale-0 transition"
+              className="object-cover transition duration-500 hover:scale-[1.04]"
             />
           </button>
         ))}
