@@ -1,6 +1,8 @@
 import type { Metadata, Viewport } from 'next'
 import Script from 'next/script'
 import { lora, pretendard } from '@/lib/fonts'
+import { absoluteAsset } from '@/lib/assetPath'
+import { wedding } from '@/lib/weddingInfo'
 import './globals.css'
 
 export const metadata: Metadata = {
@@ -12,7 +14,13 @@ export const metadata: Metadata = {
     description: '2026. 10. 3. SAT 5PM · 고려대학교 교우회관',
     type: 'website',
     locale: 'ko_KR',
-    images: [{ url: 'photos/meta-image.png', width: 1200, height: 630 }],
+    images: [
+      {
+        url: absoluteAsset(wedding.url, '/photos/meta-image.png'),
+        width: 1200,
+        height: 630,
+      },
+    ],
   },
 }
 

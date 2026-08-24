@@ -2,6 +2,7 @@
 import { useState } from 'react'
 import { wedding } from '@/lib/weddingInfo'
 import { copyText } from '@/lib/copy'
+import { absoluteAsset } from '@/lib/assetPath'
 import { shareToKakao } from '@/lib/kakao'
 import { Toast } from './Toast'
 
@@ -12,7 +13,7 @@ export function Share() {
     const ok = await shareToKakao({
       title: `${wedding.bride.name} · ${wedding.groom.name} 결혼합니다`,
       description: `${wedding.date.display} · ${wedding.venue.name}`,
-      imageUrl: `${wedding.url}photos/meta-image.png`,
+      imageUrl: absoluteAsset(wedding.url, '/photos/meta-image.png'),
       linkUrl: wedding.url,
     })
     if (!ok) setToast('카카오톡 공유를 사용할 수 없어요')
