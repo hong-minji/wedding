@@ -1,9 +1,10 @@
 'use client'
 import Image from 'next/image'
 import { useEffect, useRef, useState } from 'react'
+import type { GalleryPhoto } from '@/lib/photos'
 
 interface Props {
-  photos: string[]
+  photos: GalleryPhoto[]
   startIndex: number
   onClose: () => void
 }
@@ -51,10 +52,12 @@ export function Lightbox({ photos, startIndex, onClose }: Props) {
     >
       <div className="relative h-full w-full" onClick={e => e.stopPropagation()}>
         <Image
-          key={photos[index]}
-          src={photos[index]}
+          key={photos[index].full}
+          src={photos[index].full}
           alt={`사진 ${index + 1}`}
           fill
+          placeholder="blur"
+          blurDataURL={photos[index].fullBlur}
           sizes="100vw"
           className="object-contain"
         />

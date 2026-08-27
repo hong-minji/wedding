@@ -3,9 +3,12 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "predev": "node scripts/generate-asset-manifest.mjs",
+    "predev": "npm run assets",
+    "assets": "npm run photos && npm run fonts",
+    "photos": "node scripts/optimize-photos.mjs && node scripts/generate-asset-manifest.mjs",
+    "fonts": "node scripts/optimize-fonts.mjs",
     "dev": "next dev",
-    "prebuild": "node scripts/generate-asset-manifest.mjs",
+    "prebuild": "npm run assets",
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
@@ -25,6 +28,8 @@
     "@types/react-dom": "^19",
     "eslint": "^9",
     "eslint-config-next": "16.2.10",
+    "sharp": "^0.34.5",
+    "subset-font": "^2.5.0",
     "tailwindcss": "^4",
     "typescript": "^5",
     "vitest": "^4.1.10"

@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     locale: 'ko_KR',
     images: [
       {
-        url: absoluteAsset(wedding.url, '/photos/meta-image.png'),
+        url: absoluteAsset(wedding.url, '/photos/meta-image.jpg'),
         width: 1200,
         height: 630,
       },

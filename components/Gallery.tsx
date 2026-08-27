@@ -2,16 +2,7 @@
 import Image from 'next/image'
 import { useState } from 'react'
 import { Lightbox } from './Lightbox'
-import { asset } from '@/lib/assetPath'
-
-const PHOTOS = [
-  asset('/photos/photo-01.png'),
-  asset('/photos/photo-02.png'),
-  asset('/photos/photo-05.png'),
-  asset('/photos/photo-06.png'),
-  asset('/photos/photo-03.png'),
-  asset('/photos/photo-04.png'),
-]
+import { galleryPhotos } from '@/lib/photos'
 
 export function Gallery() {
   const [openIndex, setOpenIndex] = useState<number | null>(null)
@@ -22,18 +13,20 @@ export function Gallery() {
         Gallery
       </p>
       <div className="grid grid-cols-2 gap-2">
-        {PHOTOS.map((src, i) => (
+        {galleryPhotos.map((photo, i) => (
           <button
-            key={src}
+            key={photo.thumb}
             type="button"
             onClick={() => setOpenIndex(i)}
             className="relative aspect-square overflow-hidden focus:outline-none"
             aria-label={`사진 ${i + 1} 크게 보기`}
           >
             <Image
-              src={src}
+              src={photo.thumb}
               alt={`사진 ${i + 1}`}
               fill
+              placeholder="blur"
+              blurDataURL={photo.thumbBlur}
               sizes="(max-width: 430px) 50vw, 200px"
               className="object-cover transition duration-500 hover:scale-[1.04]"
             />
@@ -41,7 +34,7 @@ export function Gallery() {
         ))}
       </div>
       {openIndex !== null && (
-        <Lightbox photos={PHOTOS} startIndex={openIndex} onClose={() => setOpenIndex(null)} />
+        <Lightbox photos={galleryPhotos} startIndex={openIndex} onClose={() => setOpenIndex(null)} />
       )}
     </section>
   )

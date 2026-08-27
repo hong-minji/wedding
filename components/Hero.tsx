@@ -2,7 +2,7 @@
 import { useEffect, useState } from 'react'
 import Image from 'next/image'
 import { wedding } from '@/lib/weddingInfo'
-import { asset } from '@/lib/assetPath'
+import { mainPhoto } from '@/lib/photos'
 
 export function Hero() {
   const [height, setHeight] = useState<string>('100svh')
@@ -14,10 +14,12 @@ export function Hero() {
   return (
     <section className="relative w-full overflow-hidden" style={{ height }}>
       <Image
-        src={asset('/photos/main.png')}
+        src={mainPhoto.src}
         alt="홍민지 조해창"
         fill
         priority
+        placeholder="blur"
+        blurDataURL={mainPhoto.blur}
         sizes="(max-width: 430px) 100vw, 430px"
         className="object-cover"
       />
