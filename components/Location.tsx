@@ -65,6 +65,10 @@ export function Location() {
           <p className="text-[color:var(--text-primary)] text-[13px]">자가용</p>
           <p className="mt-1">{wedding.venue.car}</p>
         </div>
+        <div>
+          <p className="text-[color:var(--text-primary)] text-[13px]">당진 출발 버스</p>
+          <p className="mt-1">{wedding.venue.bus}</p>
+        </div>
       </div>
 
       {toast && <Toast message={toast} onDone={() => setToast(null)} />}

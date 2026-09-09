@@ -31,6 +31,7 @@ export const wedding = {
     lng: 127.03567611313565,
     subway: '6호선 고려대역 2번 출구 → 도보 5~7분 직진 (스타벅스 종암DT점 인근)',
     car: '내비 "종암로 13" 검색 · 건물 앞 주차장 · 2시간 무료주차',
+    bus: '당진제일교회 · 서가앤쿡 당진점 앞 · 오후 1시 30분',
     kakaoMapLink: 'https://kko.to/K4_3N5rgKD',
     naverMapLink: 'https://naver.me/51ujvFKA',
   },
