@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>해창 ♡ 민지 결혼식 날 일정</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@400;700&family=IBM+Plex+Sans+KR:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --paper:#F7F6F8; --card:#FFFFFF; --ink:#1C1A22; --muted:#5C5866; --line:#DEDBE4;
+  --groom:#27588C; --groom-soft:#E5EEF8;
+  --bride:#A8325F; --bride-soft:#F9E6EE;
+  --both:#4A6548;  --both-soft:#E8F0E6;
+  --amber:#8A5500; --amber-soft:#FBEFD8;
+  box-sizing:border-box;
+  padding-top:env(safe-area-inset-top,0px);
+  padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --paper:#141318; --card:#211F27; --ink:#F1EFF5; --muted:#B2ADBB; --line:#38343F;
+    --groom:#8EBBEB; --groom-soft:#1D2A3A; --bride:#F2A3C2; --bride-soft:#3A2230;
+    --both:#A7C7A3; --both-soft:#223022; --amber:#EDBA66; --amber-soft:#3A2E1A;
+  }
+}
+:root[data-theme="dark"]{
+  --paper:#141318; --card:#211F27; --ink:#F1EFF5; --muted:#B2ADBB; --line:#38343F;
+  --groom:#8EBBEB; --groom-soft:#1D2A3A; --bride:#F2A3C2; --bride-soft:#3A2230;
+  --both:#A7C7A3; --both-soft:#223022; --amber:#EDBA66; --amber-soft:#3A2E1A;
+}
+*,*::before,*::after{box-sizing:inherit}
+html{scroll-padding-top:calc(env(safe-area-inset-top,0px) + 70px)}
+body{margin:0;background:var(--paper);color:var(--ink);
+  font-family:"IBM Plex Sans KR",-apple-system,BlinkMacSystemFont,"Apple SD Gothic Neo","Malgun Gothic",sans-serif;
+  font-size:18px;line-height:1.6;-webkit-text-size-adjust:100%;word-break:keep-all}
+.wrap{max-width:560px;margin:0 auto;padding:0 18px 40px}
+a{color:inherit}
+a:focus-visible,button:focus-visible,summary:focus-visible{outline:3px solid var(--ink);outline-offset:2px}
+
+.g{--side:var(--groom);--side-soft:var(--groom-soft)}
+.b{--side:var(--bride);--side-soft:var(--bride-soft)}
+.n{--side:var(--both);--side-soft:var(--both-soft)}
+
+/* hero */
+header{padding:32px 0 18px}
+.names{font-family:"Gowun Batang",serif;font-size:18px;margin:0 0 10px;font-weight:700}
+.names .gn{color:var(--groom)} .names .bn{color:var(--bride)}
+.when{font-family:"Gowun Batang",serif;font-weight:700;font-size:34px;line-height:1.25;margin:0}
+.where{font-size:19px;font-weight:600;margin:8px 0 0}
+.dday{display:inline-block;margin-top:12px;font-weight:700;font-size:16px;padding:3px 14px;border-radius:999px;background:var(--ink);color:var(--paper)}
+.traffic{margin:18px 0 0;padding:14px 16px;border-radius:14px;background:var(--amber-soft);color:var(--ink);font-size:16px;line-height:1.55}
+.traffic b{color:var(--amber)}
+
+/* who picker */
+.pick{padding-top:22px}
+.pick h2{font-size:23px;margin:0 0 4px}
+.pick>p{margin:0 0 6px;color:var(--muted);font-size:17px}
+.group{margin-top:16px}
+.group h3{display:flex;align-items:center;gap:8px;font-size:17px;margin:0 0 8px;color:var(--side)}
+.group h3::before{content:"";width:12px;height:12px;border-radius:50%;background:var(--side)}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.who-btn{min-height:70px;text-align:left;border:2px solid var(--line);border-left:8px solid var(--side);background:var(--card);color:var(--ink);
+  border-radius:14px;padding:11px 12px;font:inherit;font-size:18px;font-weight:700;line-height:1.3;cursor:pointer}
+.who-btn small{display:block;font-weight:400;font-size:14px;color:var(--muted);margin-top:3px}
+.who-btn[aria-pressed="true"]{background:var(--side-soft);border-color:var(--side)}
+
+/* sticky bar */
+.bar{position:sticky;top:0;z-index:5;background:var(--paper);padding:calc(env(safe-area-inset-top,0px) + 8px) 0 8px;
+  display:flex;align-items:center;justify-content:space-between;gap:10px;border-bottom:3px solid var(--side)}
+.bar[hidden]{display:none}
+.bar b{font-size:17px;color:var(--side)}
+.bar button{font:inherit;font-size:16px;font-weight:600;border:2px solid var(--ink);color:var(--ink);background:var(--card);border-radius:10px;padding:6px 12px;cursor:pointer;white-space:nowrap}
+
+/* my schedule */
+#mine{padding-top:18px}
+#mine[hidden],.pick[hidden]{display:none}
+.side-tag{display:inline-block;font-size:15px;font-weight:700;color:var(--side);background:var(--side-soft);padding:2px 10px;border-radius:6px;margin-bottom:8px}
+.me-title{font-family:"Gowun Batang",serif;font-size:26px;font-weight:700;margin:0 0 14px;line-height:1.3}
+.go{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:18px}
+.go.one{grid-template-columns:1fr}
+.go div{border-radius:14px;padding:14px;background:var(--card);border:2px solid var(--side);color:var(--ink)}
+.go div.dep{background:var(--side);border-color:var(--side);color:var(--card)}
+.go span{display:block;font-size:15px;font-weight:700}
+.go b{display:block;font-family:"Gowun Batang",serif;font-size:36px;line-height:1.15}
+.go em{display:block;font-style:normal;font-size:15px;line-height:1.4;margin-top:4px}
+.steps{list-style:none;margin:0 0 16px;padding:0;background:var(--card);border:1px solid var(--line);border-radius:14px}
+.steps li{display:grid;grid-template-columns:80px 1fr;gap:12px;padding:14px 16px;border-bottom:1px solid var(--line)}
+.steps li:last-child{border-bottom:0}
+.steps .t{font-family:"Gowun Batang",serif;font-weight:700;font-size:22px;color:var(--side);line-height:1.3}
+.steps .x{font-size:18px;font-weight:600;line-height:1.45}
+.steps .x small{display:block;font-weight:400;font-size:15px;color:var(--muted);margin-top:2px}
+.steps li.next{background:var(--side-soft)}
+.steps li.next .t::after{content:"다음";display:block;font-family:"IBM Plex Sans KR",sans-serif;font-size:12px;font-weight:700}
+
+/* toggles */
+details{background:var(--card);border:1px solid var(--line);border-radius:14px;margin-bottom:10px}
+summary{list-style:none;cursor:pointer;display:flex;flex-direction:column;justify-content:center;padding:14px 48px 14px 16px;font-size:18px;font-weight:700;position:relative;min-height:56px}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";position:absolute;right:16px;top:50%;transform:translateY(-50%);font-size:26px;font-weight:400}
+details[open] summary::after{content:"–"}
+summary small{display:block;font-size:14px;font-weight:400;color:var(--muted)}
+.body{padding:0 16px 14px;font-size:17px}
+.body ul{margin:0;padding-left:20px}
+.body li{margin-bottom:8px}
+.body p{margin:0 0 10px}
+.tbd{display:inline-block;font-size:14px;font-weight:700;padding:0 8px;border-radius:4px;background:var(--amber-soft);color:var(--amber)}
+
+section.shared{padding-top:24px}
+section.shared h2{font-size:21px;margin:0 0 12px}
+.legend{display:flex;gap:14px;flex-wrap:wrap;font-size:14px;color:var(--muted);margin:-4px 0 12px}
+.legend span::before{content:"";display:inline-block;width:10px;height:10px;border-radius:50%;background:var(--side);margin-right:5px;vertical-align:0}
+
+.rows .r{display:grid;grid-template-columns:58px 1fr;gap:10px;padding:10px 0 10px 10px;border-bottom:1px solid var(--line);border-left:4px solid var(--side)}
+.rows .r:last-child{border-bottom:0}
+.rows .r b{font-family:"Gowun Batang",serif;font-size:19px;color:var(--side)}
+.rows .r small{display:block;color:var(--muted);font-size:14px}
+.rows .day{font-size:15px;font-weight:700;color:var(--muted);padding:12px 0 4px}
+.body.tight{padding:0 6px 10px}
+.tt{width:100%;border-collapse:separate;border-spacing:3px;table-layout:fixed;font-size:14.5px;line-height:1.4}
+.tt col.tc{width:46px}
+.tt th{font-size:13px;font-weight:700;padding:6px 2px;border-radius:6px;background:var(--side);color:var(--card);line-height:1.25}
+.tt th.blank{background:transparent}
+.tt td{vertical-align:top;padding:6px 5px;border-radius:6px;overflow-wrap:anywhere}
+.tt td.c{background:var(--side-soft);border-left:3px solid var(--side);font-weight:500}
+.tt td.time{font-family:"Gowun Batang",serif;font-weight:700;font-size:15px;padding:6px 0 6px 2px}
+.tt td.all{background:var(--ink);color:var(--paper);font-weight:700;text-align:center;font-size:15px}
+.tt td.all small{display:block;font-weight:400;font-size:13px;opacity:.85}
+.tt tr.day td{font-size:14px;font-weight:700;color:var(--muted);padding:10px 2px 2px}
+.tt tr.now td.time{color:var(--card);background:var(--ink);border-radius:6px;text-align:center}
+.order{margin:0;padding-left:26px}
+.order li{margin-bottom:6px}
+.order small{color:var(--muted)}
+.btns{display:flex;gap:8px;flex-wrap:wrap;margin:6px 0 12px}
+.btn{display:inline-flex;align-items:center;min-height:46px;text-decoration:none;font:inherit;font-size:16px;font-weight:600;padding:8px 16px;border-radius:12px;border:2px solid var(--ink);color:var(--ink);background:transparent;cursor:pointer}
+.call{display:grid;grid-template-columns:1fr auto;align-items:center;gap:10px;padding:10px 0;border-bottom:1px solid var(--line)}
+.call:last-child{border-bottom:0}
+.call.g>div:first-child{color:var(--groom);font-weight:700}
+.call.b>div:first-child{color:var(--bride);font-weight:700}
+.call small{display:block;color:var(--muted);font-size:14px;font-weight:400}
+footer{padding:24px 0 10px;font-size:15px;color:var(--muted)}
+@media (prefers-reduced-motion:no-preference){html{scroll-behavior:smooth}}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <p class="names"><span class="gn">신랑 조해창</span> · <span class="bn">신부 홍민지</span></p>
+  <p class="when">10월 3일 토요일<br>오후 5시 예식</p>
+  <p class="where">고려대학교 교우회관 1층</p>
+  <span class="dday" id="dday"></span>
+  <p class="traffic"><b>이날은 개천절, 토·일·월 3일 연휴 첫날이에요.</b> 서울 시내가 많이 막히니 아래 출발 시간을 꼭 지켜 주세요. 광화문·종로 도심은 피해서 오세요.</p>
+</header>
+
+<div class="bar" id="bar" hidden>
+  <b id="barName"></b>
+  <button type="button" id="change">다른 분 보기</button>
+</div>
+
+<section id="mine" hidden aria-live="polite"></section>
+
+<section class="pick" id="pick">
+  <h2>누구세요?</h2>
+  <p>이름을 누르시면 내 일정만 크게 보여요.</p>
+  <div class="group g"><h3>신랑측</h3><div class="grid" data-grp="g"></div></div>
+  <div class="group b"><h3>신부측</h3><div class="grid" data-grp="b"></div></div>
+  <div class="group n"><h3>예식 진행</h3><div class="grid" data-grp="n"></div></div>
+</section>
+
+<section class="shared">
+  <h2>모두 함께 보는 정보</h2>
+  <div class="legend"><span class="g">신랑측</span><span class="b">신부측</span><span class="n">예식 진행</span></div>
+
+  <details>
+    <summary>출발 시간 한눈에<small>연휴 첫날 정체를 감안한 시간이에요</small></summary>
+    <div class="body rows">
+      <div class="r g"><b>10:00</b><div>신랑 아버님·어머님, 작은누님 내외<small>충남 당진 → 13:30 도착</small></div></div>
+      <div class="r b"><b>10:50</b><div>신부 언니, 남동생<small>은평구 수색동 → 택시로 홍대 샵 11:30</small></div></div>
+      <div class="r n"><b>11:00</b><div>신랑·신부<small>이대역 근처 샵으로</small></div></div>
+      <div class="r b"><b>12:45</b><div>신부 어머님 (양가 한복)<small>은평구 수색동 → 택시로 14:00 도착</small></div></div>
+      <div class="r g"><b>13:30</b><div>당진 출발 버스<small>당진제일교회 앞 → 16:00~16:30 도착</small></div></div>
+      <div class="r n"><b>14:45</b><div>주례 목사님, 반주 시은 양 (한 차로)<small>구로구 구일동 → 16:30 전 도착</small></div></div>
+      <div class="r b"><b>14:45</b><div>신부 남동생 (사회자, 늦어도)<small>홍대 샵 → 택시로 16:10쯤 도착</small></div></div>
+      <div class="r n"><b>15:00</b><div>신랑·신부<small>샵 → 식장, 16:00 도착</small></div></div>
+      <div class="r g"><b>15:00</b><div>신랑 큰누님 내외 (늦어도)<small>상수역 쪽 메이크업샵 → 16:30 도착</small></div></div>
+      <div class="r b"><b>15:00</b><div>신부 언니 (늦어도)<small>홍대 샵 → 택시로 16:20쯤 도착</small></div></div>
+    </div>
+  </details>
+
+  <details>
+    <summary>하루 전체 일정<small>시간별 타임테이블</small></summary>
+    <div class="body tight">
+      <table class="tt">
+        <colgroup><col class="tc"><col><col><col></colgroup>
+        <thead><tr><th class="blank"></th><th class="g">신랑측</th><th class="b">신부측</th><th class="n">신랑·신부<br>예식 진행</th></tr></thead>
+        <tbody>
+        <tr class="day"><td colspan="4">10월 2일 금요일, 전날</td></tr>
+        <tr data-t="전날"><td class="time">전날</td><td></td><td></td><td class="c n">턱시도 찾기 (청담)<br>양가 한복 찾기</td></tr>
+        <tr class="day"><td colspan="4">10월 3일 토요일, 예식 날</td></tr>
+        <tr data-t="10:00"><td class="time">10:00</td><td class="c g">아버님·어머님, 작은누님 내외 당진 출발</td><td></td><td></td></tr>
+        <tr data-t="10:50"><td class="time">10:50</td><td></td><td class="c b">언니·남동생 수색동 출발 (택시)</td><td></td></tr>
+        <tr data-t="11:00"><td class="time">11:00</td><td></td><td></td><td class="c n">신랑·신부 이대역 근처 샵으로</td></tr>
+        <tr data-t="11:30"><td class="time">11:30</td><td></td><td class="c b">언니·남동생 홍대 샵 메이크업</td><td></td></tr>
+        <tr data-t="12:00"><td class="time">12:00</td><td></td><td></td><td class="c n">신랑·신부 헤어·메이크업</td></tr>
+        <tr data-t="12:45"><td class="time">12:45</td><td></td><td class="c b">어머님 수색동 출발 (택시, 양가 한복)</td><td></td></tr>
+        <tr data-t="13:30"><td class="time">13:30</td><td class="c g">아버님·어머님 메이크업실 도착<br>당진 버스 출발</td><td></td><td></td></tr>
+        <tr data-t="14:00"><td class="time">14:00</td><td></td><td class="c b">어머님 식장 도착</td><td></td></tr>
+        <tr data-t="14:30"><td class="time">14:30</td><td></td><td class="c b">어머님 메이크업</td><td></td></tr>
+        <tr data-t="14:45"><td class="time">14:45</td><td></td><td class="c b">남동생 샵 출발 (늦어도)</td><td class="c n">목사님·시은 양 구일동 출발 (한 차)</td></tr>
+        <tr data-t="15:00"><td class="time">15:00</td><td class="c g">큰누님 내외 상수역 쪽 샵 출발 (늦어도)</td><td class="c b">언니 샵 출발 (늦어도)</td><td class="c n">신랑·신부 식장으로 출발</td></tr>
+        <tr data-t="16:00"><td class="time">16:00</td><td class="c g">신랑측 축의대 도착<br>당진 버스 도착 (~16:30)</td><td class="c b">신부측 축의대 도착</td><td class="c n">신랑·신부 식장 도착</td></tr>
+        <tr data-t="16:30"><td class="time">16:30</td><td class="c g">큰누님 내외 도착</td><td class="c b">언니·남동생 도착<br>언니: 가방순이 (신부 소지품)</td><td class="c n">리허설 (사회·주례·반주·축가, 양가 어머님)<br>신랑: 목사님 주차권<br>피로연장 오픈</td></tr>
+        <tr data-t="17:00" class="key"><td class="time">17:00</td><td class="all" colspan="3">예식 시작</td></tr>
+        <tr data-t="17:50" class="key"><td class="time">17:50</td><td class="all" colspan="3">가족사진까지 마무리<small>이어서 피로연장 인사, 식사</small></td></tr>
+        <tr data-t="18:30" class="key"><td class="time">18:30</td><td class="all" colspan="3">피로연장 종료, 식대 정산<small>신랑·신부가 24시간 주차권 3장 받기</small></td></tr>
+        </tbody>
+      </table>
+    </div>
+  </details>
+
+  <details>
+    <summary>예식 순서</summary>
+    <div class="body">
+      <ol class="order">
+        <li>개식사 <small>사회자 홍순택</small></li>
+        <li>화촉점화 <small>양가 어머님</small></li>
+        <li>주례 등단 <small>정현철 목사님</small></li>
+        <li>입장 <small>신랑, 이어서 신부 단독 입장</small></li>
+        <li>맞절</li>
+        <li>찬송 605장 <small>다 같이, 반주 시은 양</small></li>
+        <li>혼인서약 <small>주례 목사님</small></li>
+        <li>성혼선언 <small>주례 목사님</small></li>
+        <li>주례사 <small>빌립보서 2:2–4, 축복의 말씀, 축복기도</small></li>
+        <li>축가 <small>신랑</small></li>
+        <li>인사 <small>양가 부모님과 하객께</small></li>
+        <li>행진</li>
+      </ol>
+    </div>
+  </details>
+
+  <details>
+    <summary>오시는 길과 주차</summary>
+    <div class="body">
+      <p><b>고려대학교 교우회관 1층</b><br>서울 성북구 종암로 13</p>
+      <div class="btns">
+        <a class="btn" href="https://naver.me/51ujvFKA" target="_blank" rel="noopener">네이버지도</a>
+        <a class="btn" href="https://kko.to/K4_3N5rgKD" target="_blank" rel="noopener">카카오맵</a>
+        <button class="btn" type="button" id="copyAddr">주소 복사</button>
+      </div>
+      <ul>
+        <li><b>자가용</b> 내비에 “종암로 13”, 건물 앞 주차장. 도심(광화문·종로)보다 내부순환로가 나아요.</li>
+        <li><b>하객</b> 2시간 무료 주차권은 1층 축의대에서 받아요</li>
+        <li><b>주례 목사님</b> 주차권은 신랑이 챙겨 드려요</li>
+        <li><b>혼주 차량</b> 24시간 주차권 3장은 예식 후 신랑·신부가 받아서 드려요. 나가실 때 주차권으로 먼저 정산해 주세요.</li>
+      </ul>
+    </div>
+  </details>
+
+  <details>
+    <summary>연락처</summary>
+    <div class="body">
+      <div class="call g"><div>신랑 조해창</div><a class="btn" href="tel:01029334511">010-2933-4511</a></div>
+      <div class="call b"><div>신부 홍민지</div><a class="btn" href="tel:01066409625">010-6640-9625</a></div>
+      <div class="call"><div>웨딩홀<small>웨드유 웨딩</small></div><a class="btn" href="tel:029252310">02-925-2310</a></div>
+      <div class="call"><div>당진 버스 기사님<small>충남72바4242</small></div><a class="btn" href="tel:01039484412">010-3948-4412</a></div>
+      <div class="btns" style="margin-top:12px"><a class="btn" href="https://hong-minji.github.io/wedding/" target="_blank" rel="noopener">모바일 청첩장 보기</a></div>
+    </div>
+  </details>
+</section>
+
+<footer>시간이 바뀌면 이 페이지가 먼저 바뀌어요. 같은 링크로 다시 열어 보세요.</footer>
+</div>
+
+<script>
+var ADDR='교우회관 1층';
+var PREP=['세안 후 기초화장까지만 하고 오세요','머리는 샴푸로만 감고 완전히 말려 주세요. 린스·트리트먼트·헤어제품은 쓰지 않아요','상의는 앞이 다 열리는 단추나 지퍼 옷으로 입어 주세요. 셔츠, 반집업은 안 돼요'];
+var CAR='내비에 “종암로 13”, 건물 앞 주차장';
+var DESK=['방명록, 봉투, 식권은 웨딩홀에서 준비해 둬요','차로 오신 하객분께 2시간 주차권을 드려요 (웨딩홀이 축의대에 준비해 둬요)','신랑과 신부 언니가 여분 식권·주차권을 받으러 와요','화환은 예식 후 바로 정리돼요. 보내신 분을 사진으로 남겨 주세요'];
+
+var R={
+ 'groom-p':{side:'g',sideName:'신랑측',btn:'신랑 아버님·어머님',sub:'작은누님 내외 함께',name:'신랑 아버님·어머님, 작은누님 내외',
+  go:['10:00','충남 당진 출발'],ar:['13:30',ADDR+' 메이크업실 ‘렌느’'],
+  steps:[['10:00','당진에서 출발','연휴 첫날이라 3시간 반을 잡았어요'],['점심','오시는 길 휴게소에서 식사','예식 뒤 저녁까지 식사가 늦어져요'],['13:30','메이크업실 ‘렌느’ 도착',ADDR],['16:30','리허설','어머님은 화촉점화 연습'],['17:00','예식',''],['예식 후','가족사진','']],
+  more:[['준비하고 오실 것',PREP.concat(['한복은 신부 어머님께서 양가 것을 모두 가져오세요'])],
+        ['오시는 길',['평소 2시간 거리지만 연휴 첫날이라 서울 들어오는 구간부터 막힐 수 있어요',CAR,'차량 303주 5081']],
+        ['주차',['24시간 주차권은 예식 후 신랑·신부가 받아서 드려요. 나가시기 전에 꼭 받아 가세요']]]},
+ 'bigsis':{side:'g',sideName:'신랑측',btn:'신랑 큰누님 내외',sub:'상수역 쪽 샵 들렀다 오심',name:'신랑 큰누님 내외',
+  go:['15:00','상수역 쪽 메이크업샵 (늦어도)'],ar:['16:30',ADDR],
+  steps:[['먼저','구일동 → 상수역 쪽 메이크업샵','샵 예약 시간에 맞춰 출발, 차로 30~40분'],['15:00','샵에서 식장으로 출발','늦어도 이 시간, 연휴 오후라 50~80분'],['16:30','식장 도착',ADDR],['17:00','예식',''],['예식 후','가족사진','자리를 비우지 말아 주세요']],
+  more:[['샵에서 식장 가는 길',['상수역 쪽에서는 내부순환로로 오시는 게 좋아요','광화문·종로 도심은 피해 주세요',CAR]],
+        ['주차',['2시간 주차권은 1층 축의대에서 받으세요']]]},
+ 'desk-g':{side:'g',sideName:'신랑측',btn:'신랑측 축의대',sub:'하객 접수',name:'신랑측 축의대',
+  go:null,ar:['16:00','1층 축의대, 예식 1시간 전'],
+  steps:[['16:00','1층 축의대 도착','예식 1시간 전'],['16:30','하객 맞이','당진 버스 하객분들 도착'],['17:00','예식','']],
+  more:[['할 일',DESK],['담당',['<span class="tbd">정하는 중</span>']]]},
+ 'bus':{side:'g',sideName:'신랑측',btn:'당진 버스 하객분들',sub:'13:30 출발',name:'당진 출발 버스 하객분들',
+  go:['13:30','당진제일교회 앞'],ar:['16:00',ADDR+', 16:30 사이'],
+  steps:[['13:30','버스 출발','당진제일교회, 서가앤쿡 당진점 앞'],['16:00','식장 도착','연휴라 16:30까지 늦어질 수 있어요'],['17:00','예식','이어서 식사']],
+  more:[['버스 정보',['45인승, 충남72바4242','기사님 <a href="tel:01039484412">010-3948-4412</a>']]]},
+
+ 'bride-m':{side:'b',sideName:'신부측',btn:'신부 어머님',sub:'양가 한복 챙기기',name:'신부 어머님',
+  go:['12:45','수색동에서 택시'],ar:['14:00',ADDR+' 메이크업실 ‘렌느’'],
+  steps:[['12:30','택시 부르기','연휴라 택시가 늦게 잡힐 수 있어요'],['12:45','수색동에서 출발','양가 한복 모두 챙기기'],['14:00','식장 도착',ADDR+' 메이크업실'],['14:30','헤어·메이크업',''],['16:30','리허설','화촉점화 연습'],['17:00','예식','']],
+  more:[['준비하고 오실 것',['양가 한복 모두 챙기기','출발 전에 점심 꼭 드세요'].concat(PREP)],
+        ['가는 길',['기사님께 “고려대학교 교우회관, 종암로 13”이라고 말씀하세요','내부순환로로 40~60분. 연휴라 1시간 15분을 잡았어요','광화문·종로 도심 쪽은 피해 달라고 말씀하세요']]]},
+ 'sib':{side:'b',sideName:'신부측',btn:'신부 언니·남동생',sub:'언니는 가방순이, 남동생은 사회자',name:'신부 언니(가방순이)와 남동생(사회자 홍순택)',
+  go:['10:50','수색동에서 택시'],ar:['11:30','홍대 모이헤어메이크업'],
+  steps:[['10:50','수색동에서 택시로 출발','20~30분'],['11:30','메이크업 시작','남동생이 먼저 받아요'],['14:45','남동생 택시로 출발','끝나는 대로 바로, 늦어도 이 시간'],['15:00','언니 택시로 출발','늦어도 이 시간'],['16:20','식장 도착','남동생은 16:30 리허설'],['도착 후','언니: 가방순이 시작','신부 핸드폰·소지품 받기, 여분 식권·주차권 챙기기'],['17:00','예식','남동생 사회'],['식사 때','언니: 작가님 식권','사진 작가님(여성)께 식권 챙겨 드리기'],['예식 후','가족사진','']],
+  more:[['언니가 챙길 것 (가방순이)',['신부 핸드폰과 소지품','여분 식권과 주차권 (축의대에서)','사진 작가님(여성) 식권 챙겨 드리기']],
+        ['헤어·메이크업 샵',['모이헤어메이크업','서울 마포구 양화로 183 효성홍익인간 지하1층 B10호','<a href="https://naver.me/GbyPHpQf" target="_blank" rel="noopener">네이버지도로 보기</a>']],
+        ['샵에서 식장 가는 길 (택시)',['기사님께 “고려대학교 교우회관, 종암로 13”, 내부순환로로 가 달라고 하세요','연휴 오후 홍대 주변이 막혀 50~80분 걸릴 수 있어요','연휴라 택시가 늦게 잡힐 수 있어요. 10분 전에 미리 불러 주세요']],
+        ['사회 준비',['웨딩홀 직원과 같은 대본으로 진행해요','예식 순서는 아래 “예식 순서”에서 확인하세요']]]},
+ 'desk-b':{side:'b',sideName:'신부측',btn:'신부측 축의대',sub:'하객 접수',name:'신부측 축의대',
+  go:null,ar:['16:00','1층 축의대, 예식 1시간 전'],
+  steps:[['16:00','1층 축의대 도착','예식 1시간 전'],['16:30','하객 맞이',''],['17:00','예식','']],
+  more:[['할 일',DESK],['담당',['막내이모 댁 조카']]]},
+
+ 'pastor':{side:'n',sideName:'예식 진행',btn:'주례 목사님',sub:'정현철 목사님',name:'주례 정현철 목사님',
+  go:['14:45','구일동, 시은 양과 한 차로'],ar:['16:30',ADDR+', 리허설'],
+  steps:[['14:45','구일동에서 출발','시은 양과 함께 차로, 60~90분'],['16:30','도착, 사전 리허설',ADDR],['17:00','예식','혼인서약, 성혼선언, 주례사']],
+  more:[['오시는 길과 주차',[CAR,'연휴라 광화문·종로 도심은 피해 주세요','주차권은 신랑이 챙겨 드립니다']],
+        ['맡아 주실 순서',['혼인서약, 성혼선언','주례사: 빌립보서 2:2–4 봉독, 축복의 말씀, 축복기도']]]},
+ 'piano':{side:'n',sideName:'예식 진행',btn:'반주 시은 양',sub:'찬송가 605장',name:'찬송가 반주 시은 양',
+  go:['14:45','구일동, 목사님과 한 차로'],ar:['16:30',ADDR+', 리허설'],
+  steps:[['14:45','구일동에서 출발','목사님과 함께 차로, 60~90분'],['16:30','도착, 사전 리허설','반주 위치 확인'],['17:00','예식','6번째 순서, 찬송가 605장']],
+  more:[['반주',['6번째 순서 찬송가 605장','입장·행진 음악은 웨딩홀 삼중주가 맡아요']]]},
+ 'couple':{side:'n',sideName:'예식 진행',btn:'신랑·신부',sub:'해창, 민지',name:'신랑·신부',
+  go:['11:00','이대역 근처 샵'],ar:['16:00',ADDR],
+  steps:[['전날','턱시도 찾기 (청담), 양가 한복 찾기','한복은 신부 어머님께 전달'],['11:00','이대역 근처 샵으로',''],['12:00','헤어·메이크업','15:00까지'],['15:00','정각에 식장으로 출발','내부순환로로, 도심은 피하기'],['16:00','식장 도착',''],['16:30','리허설','축가 MR 확인, 목사님께 주차권 드리기'],['17:00','예식',''],['18:30','식대 정산','24시간 주차권 3장 받아 혼주 차량에']],
+  more:[['챙길 것',['신랑: 축의대에서 여분 식권과 주차권 챙기기 (목사님 주차권 포함)','전날 신랑 턱시도 청담에서 찾기','전날 양가 한복 찾아서 신부 어머님께','신부 드레스는 웨딩샵 이모님이 가져오고 예식 후 가져가세요']],
+        ['주차',['신랑·신부 차 171가 9891','24시간권 3장: 정산 때 받아서 혼주 차량에']],
+        ['주례·반주 안내 페이지',['<a href="officiant.html" target="_blank" rel="noopener">주례·반주용 안내 열기</a>','주례 목사님과 반주 시은 양께는 이 링크를 보내 드려요']]]}
+};
+var ORDER=['groom-p','bigsis','desk-g','bus','bride-m','sib','desk-b','pastor','piano','couple'];
+
+var mine=document.getElementById('mine'),bar=document.getElementById('bar'),pick=document.getElementById('pick');
+ORDER.forEach(function(k){
+  var r=R[k],b=document.createElement('button');b.type='button';b.className='who-btn '+r.side;b.dataset.k=k;
+  b.innerHTML=r.btn+'<small>'+r.sub+'</small>';
+  b.addEventListener('click',function(){show(k,true)});
+  document.querySelector('.grid[data-grp="'+r.side+'"]').appendChild(b);
+});
+
+function seoulNow(){return new Date(new Date().toLocaleString('en-US',{timeZone:'Asia/Seoul'}))}
+function show(k,scroll){
+  var r=R[k];if(!r)return;
+  var h='<span class="side-tag">'+r.sideName+'</span><h2 class="me-title">'+r.name+'</h2>';
+  h+='<div class="go'+(r.go?'':' one')+'">'+(r.go?'<div class="dep"><span>출발</span><b>'+r.go[0]+'</b><em>'+r.go[1]+'</em></div>':'')+
+     '<div><span>도착</span><b>'+r.ar[0]+'</b><em>'+r.ar[1]+'</em></div></div>';
+  h+='<ol class="steps">'+r.steps.map(function(s){return '<li data-t="'+s[0]+'"><div class="t">'+s[0]+'</div><div class="x">'+s[1]+(s[2]?'<small>'+s[2]+'</small>':'')+'</div></li>'}).join('')+'</ol>';
+  h+=r.more.map(function(m){return '<details><summary>'+m[0]+'</summary><div class="body"><ul>'+m[1].map(function(i){return '<li>'+i+'</li>'}).join('')+'</ul></div></details>'}).join('');
+  mine.className=r.side;bar.className='bar '+r.side;
+  mine.innerHTML=h;mine.hidden=false;bar.hidden=false;pick.hidden=true;
+  document.getElementById('barName').textContent=r.name;
+  document.querySelectorAll('.who-btn').forEach(function(b){b.setAttribute('aria-pressed',b.dataset.k===k)});
+  markNext();
+  try{localStorage.setItem('who3',k)}catch(e){}
+  if(scroll)bar.scrollIntoView();
+}
+document.getElementById('change').addEventListener('click',function(){
+  mine.hidden=true;bar.hidden=true;pick.hidden=false;
+  try{localStorage.removeItem('who3')}catch(e){}
+  pick.scrollIntoView();
+});
+function markNext(){
+  var n=seoulNow();
+  if(n.getFullYear()!==2026||n.getMonth()!==9||n.getDate()!==3)return;
+  var mins=n.getHours()*60+n.getMinutes(),done=false;
+  document.querySelectorAll('.steps li').forEach(function(li){
+    var m=/^(\d{1,2}):(\d{2})$/.exec(li.dataset.t);if(!m||done)return;
+    if(+m[1]*60+ +m[2]>=mins){li.classList.add('next');done=true}
+  });
+}
+(function(){
+  var n=seoulNow();
+  if(n.getFullYear()===2026&&n.getMonth()===9&&n.getDate()===3){
+    var mins=n.getHours()*60+n.getMinutes(),cur=null;
+    document.querySelectorAll('.tt tr[data-t]').forEach(function(tr){
+      var m=/^(\d{1,2}):(\d{2})$/.exec(tr.dataset.t); if(m&&+m[1]*60+ +m[2]<=mins) cur=tr;
+    });
+    if(cur) cur.classList.add('now');
+  }
+})();
+(function(){
+  var n=seoulNow(),t=new Date(n.getFullYear(),n.getMonth(),n.getDate());
+  var diff=Math.round((new Date(2026,9,3)-t)/86400000);
+  document.getElementById('dday').textContent=diff>0?'D-'+diff:diff===0?'오늘이에요':'결혼했어요';
+  var k=null;try{k=localStorage.getItem('who3')}catch(e){}
+  if(k&&R[k])show(k,false);
+})();
+document.getElementById('copyAddr').addEventListener('click',function(){
+  var b=this,t='서울 성북구 종암로 13 고려대학교 교우회관';
+  function done(){b.textContent='복사했어요';setTimeout(function(){b.textContent='주소 복사'},1500)}
+  function fb(){var a=document.createElement('textarea');a.value=t;document.body.appendChild(a);a.select();
+    try{document.execCommand('copy');done()}catch(e){b.textContent=t}document.body.removeChild(a)}
+  try{navigator.clipboard.writeText(t).then(done,fb)}catch(e){fb()}
+});
+</script>
+</body>
+</html>
